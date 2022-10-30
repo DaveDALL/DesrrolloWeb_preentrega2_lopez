@@ -1,37 +1,10 @@
-/* inicalizando margen y padding */
-* {
-    padding: 0;
-    margin: 0;
-}
-/* configuración de header */
-.header {
-    height: 150px;
-}
-/* configuración de la lista de la nav bar */
-.header_nav_ul {
-    list-style-type: none;
-    text-align: center;
-}
-.header_nav_ul_li {
-    font-family: 'Oswald', sans-serif;
-    float: left;
-    width: 4cm;
-    padding-top: 50px;
-    
-    }
 /* configuración del titulo */
 h1 {
     font-family: 'Chango', cursive;
-    /*color:midnightblue;*/
     padding-top: 10px;
-    /*padding-left: 20px;*/
 }
+/* Efecto de Iluminacion sobre el Logo */
 .btn-shine {
-  /*position: absolute;
-  top: 50%;
-  left: 50%;*/
-  /*transform: translate(-10%,-10%);*/
-  /*padding: 12px 48px;*/
   color: #ffffff;
   background: linear-gradient(to right, midnightblue 0, lightblue 10%, midnightblue 20%);
   background-position: 0;
@@ -40,8 +13,6 @@ h1 {
   animation: shine 4s infinite linear;
   animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
-  /*font-weight: 600;
-  font-size: 16px;*/
   text-decoration: none;
   white-space: nowrap;
 }    
@@ -56,6 +27,50 @@ h1 {
     background-position: 360px;
   }  
 }
+nav {
+    margin-top: 50px;
+}
+.ul_li_specs {
+    font-family: 'Roboto', sans-serif;
+    /*font-size: 150%;*/
+}
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color:midnightblue;
+  }
+  .zoom:hover {
+    animation: zoom 2s ease-out infinite;
+  }
+  
+  @keyframes zoom {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+.box img{
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce 0.3s ease infinite alternate;
+  }
+  @keyframes bounce{
+    100%{
+      top: -20px;
+    }
+  }
+.div_nav {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -.75rem 0;
+    border: solid #dee2e6;
+    border-width: 1px 0 0;
+}
+
 /* configuración de subtitulo */
 h2 {
     font-family: 'Peralta', cursive;
@@ -69,7 +84,7 @@ body {
     background-image: url(../imags/catdog.jpg);
     background-repeat:repeat;
 }
-/* configuración de la imagen del la pagina index*/
+/* configuración de la imagen de la pagina index*/
 .index_init {
     margin-top: 30px;
     margin-bottom: 50px;
