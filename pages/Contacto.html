@@ -61,16 +61,13 @@
          </nav>
      </header>
     <h2>Contactanos para mayor informacion</h2>
-    <main>
-        <section class="main_section">
-            <div>
+    <main class="container">
+        <div class="row">
             <!-- insertar el mapa-->
-            <div class="main_section_map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.7524495879406!2d-99.13832479455084!3d19.411982613626414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1feddb6aef261%3A0xc1941335febdd23b!2sEfr%C3%A9n%20Rebolledo%20109%2C%20Obrera%2C%20Cuauht%C3%A9moc%2C%2006800%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1664990678039!5m2!1ses-419!2smx" width="600" height="450" style="border: 3px solid orange" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="main_section_div">
+            <div class="col-12 col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.7524495879406!2d-99.13832479455084!3d19.411982613626414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1feddb6aef261%3A0xc1941335febdd23b!2sEfr%C3%A9n%20Rebolledo%20109%2C%20Obrera%2C%20Cuauht%C3%A9moc%2C%2006800%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1664990678039!5m2!1ses-419!2smx" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <!-- Direccion -->
-                <p class="main_section_div_p">
+                <p class="div_p">
                     Ojitos y Caritas A.C. </br>
                     Efren Rebolledo No. 9, Col. Obrera </br>
                     Del. Cuahutemoc, Ciudad de México</br>
@@ -78,8 +75,7 @@
                     Correo: ojitosycaritasac@gmail.com
                 </p>
             </div>
-            </div>
-            <div class="main_section_div">
+            <div class="col-12 col-md-6">
                 <!-- formulario -->
                 <form action="#" method="POST" enctype="multipart/form-data" class="formulario">
                     <div>
@@ -108,7 +104,7 @@
                     </div>
                     <div>
                         <label for="mensaje">Escriba sus comentarios:</label></br>
-                        <textarea id="mensaje" class="input" name="mensaje" rows="7" cols="75" placeholder="Escriba sus comentarios" required></textarea>
+                        <textarea id="mensaje" class="form-control" rows="3" placeholder="Escriba sus comentarios" required></textarea>
                     <div>
                         <span>Envirar informacion de Eventos, Actividades y Publicaciones</span>
                         <input type="checkbox" name="aceptar" value="0">
@@ -117,7 +113,7 @@
                     <input id="reset" type="reset" value="Limpiar">
               </form>
             </div>  
-        </section>
+        
     </main>   
     <footer>
         <!-- Insertamos widget de contador de visitas -->
