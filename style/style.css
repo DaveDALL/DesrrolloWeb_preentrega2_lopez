@@ -68,24 +68,48 @@ nav {
   }
 /* configuración de subtitulo */
 h2 {
-    font-family: 'Peralta', cursive;
+    font-family: 'Chango', cursive;
     color:midnightblue;
     text-align: center;
     position:relative;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 /* configuración de la imagen de fonde del body */
 body {
     background-image: url(../imags/catdog.jpg);
     background-repeat:repeat;
+    overflow-x: hidden;
 }
-/* configuración de la imagen de la pagina index*/
-.index_init {
-    margin-top: 30px;
-    margin-bottom: 50px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+/* ajuste de tamaño del carrusel despues de 800px */
+@media (min-width:800px) {
+  #foto_galeria1 {
+    width:800px;
+    height:600px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+}
+/* Cambio de color en h5 de carrusel de pagina acerca */
+h5 {
+  -webkit-text-stroke: 1px skyblue;
+  color:blue;
+  font-size: 30px;
+}
+/* cambio de color en el mensaje del carrusel de la pagina acerca*/
+#acerca {
+  -webkit-text-stroke: 1px skyblue;
+  color:blue;
+  font-size: 20px;
+}
+/* ajuste de tamaño del carrusel despues de 800px */
+@media (min-width:700px) {
+  #video_galeria1 {
+    width:700px;
+    height:525px;
+    margin-left:auto;
+    margin-right: auto;
+  }
 }
 /* configuración de la disposición de la pagina de contacto*/
 .main_section {
@@ -125,42 +149,10 @@ body {
     padding-left: 30px;
     padding-bottom: 30px;
 }
-/* configuración del mensaje sobre nosotros*/
-.main_section_about {
-    margin-top: 20px;
-    margin-left: 12vw;
-    margin-bottom: 40px;
-    text-align: center;
-    width: 72vw;
-    padding: 30px;
-    display: flex;
-    background-color: #ffffff;
-    border: 3px solid orange;
-    opacity: 0.8;
-}
-.main_section_about_p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 110%;
-    color: midnightblue;
-    padding-bottom: 10px;
-}
 .main_section_about_p_down {
     padding-top: 20px;
     font-size: 250%;
     color: midnightblue;
-}
-/* configuracion de secion actividades*/
-.main_section_actividades {
-    margin-top: 20px;
-    margin-left: 500px;
-    margin-bottom: 20px;
-}
-.main_section_div_pactividades {
-    font-family: 'Oswald', sans-serif;
-    font-size: 100%;
-    color: midnightblue;
-    padding: 10px;
 }
 /* configuracion de la seccion de calendario de eventos*/
 .main_div_calendar {
@@ -170,6 +162,7 @@ body {
     align-content: center;
     justify-content: center;
 }
+/* Configuración de los margenes del footer */
 .foot_item {
     margin-top: 20px;
     margin-bottom: 20px;
